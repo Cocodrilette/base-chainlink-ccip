@@ -323,7 +323,26 @@ Para desplegar nuestro contrato necesitaremos la dirección del Router y del tok
     ```
     0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238
     ```
+
+> **💡 Nota**: Para obtener USDC en redes de pruebas podemos usar el [faucet de Circle](https://faucet.circle.com/)
+
 - **_amount**: Ya te imaginas.
+
+## Base ERC20
+
+Para dar `approve` de nuestro USDC vamos a necesitar un ERC20 muy simple para interactuar con el contrato desde Remix. Aqui te tienes uno.
+
+```ts
+// SPDX-License-Identifier: MIT
+// Compatible with OpenZeppelin Contracts ^5.0.0
+pragma solidity ^0.8.22;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract BaseERC20 is ERC20 {
+    constructor() ERC20("BaseERC20", "BERC20") {}
+}
+```
 
 ## Transfer Tokens and Pay in Link
 
