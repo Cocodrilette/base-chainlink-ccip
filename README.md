@@ -307,21 +307,38 @@ contract TokenTransferor is OwnerIsCreator {
 
 ## Contract Addresses
 
-Para desplegar nuestro contrato necesitaremos la dirección del Router y del token Link en la red de origen. Para Sepolia las direcciones son las siguientes:
+Para desplegar nuestro contrato necesitaremos la dirección del Router y del token Link en la red de origen. 
+
+Para Sepolia las direcciones son las siguientes:
+
+- **Router**: `0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59`
+- **Link**: `0x779877A7B0D9E8603169DdbD7836e478b4624789`
+
+Para Avalanche Fuji:
 
 - **Router**: `0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59`
 - **Link**: `0x779877A7B0D9E8603169DdbD7836e478b4624789`
 
 ## Another Important Values
 
-- **_destinationChainSelector**:
-    ```
-    14767482510784806043
-    ```
+- **_destinationChainSelector**.
+    - Avalanche Fuji.
+        ```
+        14767482510784806043
+        ```
+    - Ethereum Sepolia.
+        ```
+        16015286601757825753
+        ```
 - **_destination**: La dirección que recibirá en la red de destino. Puedes ser tu dirección.
 - **_token**: La dirección del token que vamos a enviar. **Debe ser un token soportado por Chainlink**. Puedes ver los tokens soportados [aquí](https://docs.chain.link/ccip/supported-networks/v1_2_0/testnet#ethereum-sepolia-avalanche-fuji). En este caso usaremos USDC.
+    - USDC on Ethereum Sepolia (6 decimales).
     ```
     0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238
+    ```
+    - USDC on Avalanche Fuji (6 decimales).
+    ```
+    0x5425890298aed601595a70AB815c96711a31Bc65
     ```
 
 > **💡 Nota**: Para obtener USDC en redes de pruebas podemos usar el [faucet de Circle](https://faucet.circle.com/)
