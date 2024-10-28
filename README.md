@@ -328,7 +328,7 @@ Para Sepolia las direcciones son las siguientes:
 Para Avalanche Fuji:
 
 - **Router**: `0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59`
-- **Link**: `0x779877A7B0D9E8603169DdbD7836e478b4624789`
+- **Link**: `0x0b9d5D9136855f6FEc3c0993feE6E9CE8a297846`
 
 ## Another Important Values
 
